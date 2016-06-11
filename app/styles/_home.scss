@@ -1,0 +1,110 @@
+.body-container {
+  .navbar-header {
+    padding: 30px 0 30px 0;
+    width: 100%;
+    .header-sub {
+      padding-left: 172px;
+      padding-top: 15px;
+    }
+  }
+  .navbar-brand {
+  } .main-nav {
+    position: relative;
+    float: left;
+    ul {
+      list-style: none;
+      li {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .content {
+    z-index: 3;
+    margin-bottom: 100px;
+    position: relative;
+    float:left;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    letter-spacing: 2px;
+    h2 {
+      padding: 35px;
+    }
+
+    .secondary-nav {
+      border-top: 1px solid #F5F5F5;
+      border-bottom: 1px solid #F5F5F5;
+    }
+  }
+}
+
+.location {
+  border-bottom: 1px solid #F5F5F5;
+  padding: 35px;
+  .location-title {
+    color: #B8B7BB;
+    font-size: 80%;
+  }
+
+  .location-full {
+    width: 100%;
+  }
+
+  .address {
+    width: 50%;
+    float: left;
+    padding: 20px 0 0 0;
+  }
+
+  .contact {
+    padding: 20px 0 0 0;
+  }
+
+  .address-one {
+    padding-right: 20px;
+  }
+
+  .form {
+    padding: 0;
+    .location-form-left {
+      float: left;
+      width: 65%;
+      padding: 20px 20px 20px 0;
+    }
+    .location-form-right {
+      float: left;
+      width:35%;
+      padding: 20px 20px 20px 0;
+    }
+  }
+
+  .location-input {
+    border: none;
+    border-bottom: 2px solid #B8B7BB;
+    &:focus {
+      outline: none !important;
+      border-bottom: 2px solid #6089A6;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+    .location .address {
+        width: 100%;
+    }
+
+    .location .form .location-form-left{
+      width: 100%;
+    }
+
+    .location .form .location-form-right {
+      width: 100%;
+    }
+}
+
+
+
+.button-saved {
+  background: #79AE42;
+  color: #FFFFFF;
+}
