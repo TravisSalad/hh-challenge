@@ -38,31 +38,10 @@
   }
 }
 
-.location {
-  border-bottom: 1px solid #F5F5F5;
-  padding: 35px;
-  .location-title {
-    color: #B8B7BB;
-    font-size: 80%;
-  }
-
-  .location-full {
-    width: 100%;
-  }
-
-  .address {
-    width: 50%;
-    float: left;
-    padding: 20px 0 0 0;
-  }
-
-  .contact {
-    padding: 20px 0 0 0;
-  }
-
-  .address-one {
-    padding-right: 20px;
-  }
+.address {
+  width: 50%;
+  float: left;
+}
 
   .form {
     padding: 0;
@@ -75,15 +54,6 @@
       float: left;
       width:35%;
       padding: 20px 20px 20px 0;
-    }
-  }
-
-  .location-input {
-    border: none;
-    border-bottom: 2px solid #B8B7BB;
-    &:focus {
-      outline: none !important;
-      border-bottom: 2px solid #6089A6;
     }
   }
 }

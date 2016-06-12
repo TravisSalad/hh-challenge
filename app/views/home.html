@@ -57,37 +57,59 @@
               <form>
 
                 <div class="location-form-left">
-                  <label class="location-title location-full"  for="loc-name">{{location.name}}</label>
-                  <input class="location-input location-full" id="loc-name" ng-change="change()" ng-model="loc.a" placeholder="{{location.name}}"></input>
-                  <div class="address address-one">
-                    <label class="location-title location-full" for="loc-address">{{location.address}}</label>
-                    <input class="location-input location-full" id="loc-address" ng-change="change()" ng-model="loc.b" placeholder="{{location.address}}"></input>
-                  </div>
+
+                  <md-input-container>
+                    <label for="loc-name">{{location.name}}</label>
+                    <input id="loc-name" ng-change="change()" ng-model="loc.a"></input>
+                  </md-input-container>
+
                   <div class="address">
-                    <label class="location-title location-full" for="loc-address-two">{{location.addressTwo}}</label>
-                    <input class="location-input location-full" id="loc-address-two" ng-change="change()" ng-model="loc.c" placeholder="{{location.addressTwo}}"></input>
+                    <md-input-container>
+                      <label for="loc-address">{{location.address}}</label>
+                      <input id="loc-address" ng-change="change()" ng-model="loc.b"></input>
+                    </md-input-container>
                   </div>
-                  <div class="address address-one">
-                    <label class="location-title location-full" for="loc-city">{{location.city}}</label>
-                    <input class="location-input location-full" id="loc-city" ng-change="change()" ng-model="loc.d" placeholder="{{location.city}}"></input>
-                  </div>
+
                   <div class="address">
-                    <label class="location-title location-full" for="loc-zip">{{location.zip}}</label>
-                    <input class="location-input location-full" id="loc-zip" ng-change="change()" ng-model="loc.e" placeholder="{{location.zip}}"></input>
+                    <md-input-container>
+                      <label for="loc-address-two">{{location.addressTwo}}</label>
+                      <input id="loc-address-two" ng-change="change()" ng-model="loc.c"></input>
+                    </md-input-container>
                   </div>
+
+                  <div class="address">
+                    <md-input-container>
+                      <label for="loc-city">{{location.city}}</label>
+                      <input id="loc-city" ng-change="change()" ng-model="loc.d"></input>
+                    </md-input-container>
+                  </div>
+
+                  <div class="address">
+                    <md-input-container>
+                      <label for="loc-zip">{{location.zip}}</label>
+                      <input id="loc-zip" ng-change="change()" ng-model="loc.e"></input>
+                    </md-input-container>
+                  </div>
+
                 </div>
 
                 <div class="location-form-right">
-                    <label class="location-title location-full" for="email">{{location.email}}</label>
-                    <input class="location-input location-full" id="email" ng-change="change()" ng-model="loc.f" placeholder="{{location.email}}"></input>
-                  <div class="contact">
-                    <label class="location-title location-full" for="reply">{{location.reply}}</label>
-                    <input class="location-input location-full" id="reply" ng-change="change()" ng-model="loc.g" placeholder="{{location.reply}}"></input>
-                  </div>
-                  <div class="contact">
-                    <label class="location-title location-full" for="phone">{{location.phone}}</label>
-                    <input class="location-input location-full" id="phone" ng-change="change()" ng-model="loc.h" placeholder="{{location.phone}}"></input>
-                  </div>
+
+                  <md-input-container>
+                    <label for="email">{{location.email}}</label>
+                    <input id="email" ng-change="change()" ng-model="loc.f"></input>
+                  </md-input-container>
+
+                  <md-input-container>
+                    <label for="reply">{{location.reply}}</label>
+                    <input id="reply" ng-change="change()" ng-model="loc.g"></input>
+                  </md-input-container>
+
+                  <md-input-container>
+                    <label for="phone">{{location.phone}}</label>
+                    <input id="phone" ng-change="change()" ng-model="loc.h"></input>
+                  </md-input-container>
+
                 </div>
 
               </div>
@@ -100,37 +122,59 @@
               <form>
 
                 <div class="location-form-left">
-                    <label class="location-title location-full" for="loc-name">{{location.name}}</label>
-                    <input class="location-input location-full" id="loc-name" ng-change="change()" ng-model="loc.i"placeholder="{{location.name}}"></input>
-                    <div class="address address-one">
-                      <label class="location-title location-full" for="loc-address">{{location.address}}</label>
-                      <input class="location-input location-full" id="loc-address" ng-change="change()" ng-model="loc.j" placeholder="{{location.address}}"></input>
-                    </div>
+
+                  <md-input-container>
+                    <label for="loc-name">{{location.name}}</label>
+                    <input id="loc-name" ng-change="change()" ng-model="loc.i"></input>
+                  </md-input-container>
+
                     <div class="address">
-                      <label class="location-title location-full" for="loc-address-two">{{location.addressTwo}}</label>
-                      <input class="location-input location-full" id="loc-address-two" ng-change="change()" ng-model="loc.k" placeholder="{{location.addressTwo}}"></input>
+                      <md-input-container>
+                        <label for="loc-address">{{location.address}}</label>
+                        <input id="loc-address" ng-change="change()" ng-model="loc.j"></input>
+                      </md-input-container>
                     </div>
-                    <div class="address address-one">
-                      <label class="location-title location-full" for="loc-city">{{location.city}}</label>
-                      <input class="location-input location-full" id="loc-city" ng-change="change()" ng-model="loc.l" placeholder="{{location.city}}"></input>
-                    </div>
+
                     <div class="address">
-                      <label class="location-title location-full" for="loc-zip">{{location.zip}}</label>
-                      <input class="location-input location-full" id="loc-zip" ng-change="change()" ng-model="loc.m" placeholder="{{location.zip}}"></input>
+                      <md-input-container>
+                        <label for="loc-address-two">{{location.addressTwo}}</label>
+                        <input id="loc-address-two" ng-change="change()" ng-model="loc.k"></input>
+                      </md-input-container>
                     </div>
+
+                    <div class="address">
+                      <md-input-container>
+                        <label for="loc-city">{{location.city}}</label>
+                        <input id="loc-city" ng-change="change()" ng-model="loc.l"></input>
+                      </md-input-container>
+                    </div>
+
+                    <div class="address">
+                      <md-input-container>
+                        <label for="loc-zip">{{location.zip}}</label>
+                        <input id="loc-zip" ng-change="change()" ng-model="loc.m"></input>
+                      </md-input-container>
+                    </div>
+
                 </div>
 
                 <div class="location-form-right">
-                    <label class="location-title location-full" for="email">{{location.email}}</label>
-                    <input class="location-input location-full" id="email" ng-change="change()" ng-model="loc.n" placeholder="{{location.email}}"></input>
-                  <div class="contact">
-                    <label class="location-title location-full" for="reply">{{location.reply}}</label>
-                    <input class="location-input location-full" id="reply" ng-change="change()" ng-model="loc.o" placeholder="{{location.reply}}"></input>
-                  </div>
-                  <div class="contact">
-                    <label class="location-title location-full" for="phone">{{location.phone}}</label>
-                    <input class="location-input location-full" id="phone" ng-change="change()" ng-model="loc.p" placeholder="{{location.phone}}"></input>
-                  </div>
+
+                    <md-input-container>
+                      <label for="email">{{location.email}}</label>
+                      <input id="email" ng-change="change()" ng-model="loc.n"></input>
+                    </md-input-container>
+
+                    <md-input-container>
+                      <label for="reply">{{location.reply}}</label>
+                      <input id="reply" ng-change="change()" ng-model="loc.o"></input>
+                    </md-input-container>
+
+                    <md-input-container>
+                      <label for="phone">{{location.phone}}</label>
+                      <input id="phone" ng-change="change()" ng-model="loc.p"></input>
+                  </md-input-container>
+
                 </div>
 
               </form>
