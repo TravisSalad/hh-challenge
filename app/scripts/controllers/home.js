@@ -29,14 +29,13 @@ angular.module('hhChallengeApp')
 
     $scope.clearData = function() {
 
-      if(newValue !=  oldValue) {
+      if(newValue !==  oldValue) {
         $scope.loc = oldValue;
         console.log(oldValue);
       }
     };
 
   });
-
 });
 
 /* TODOS

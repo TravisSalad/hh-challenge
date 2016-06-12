@@ -24,7 +24,6 @@ angular
       .when('/', {
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl',
-        controllerAs: 'home'
       })
       .otherwise({
         redirectTo: '/'
