@@ -8,7 +8,7 @@
  * Controller of the hhChallengeApp
  */
 angular.module('hhChallengeApp')
-  .controller('HomeCtrl', function ($scope) {
+  .controller('HomeCtrl', ['$scope', function ($scope) {
 
     $scope.location = {
       'name': 'Location Name',
@@ -36,7 +36,7 @@ angular.module('hhChallengeApp')
     };
 
   });
-});
+}]);
 
 /* TODOS
 1. re-write var elem using angular and scope
