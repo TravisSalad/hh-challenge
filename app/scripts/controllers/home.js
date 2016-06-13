@@ -8,9 +8,29 @@
  * Controller of the hhChallengeApp
  */
 angular.module('hhChallengeApp')
-  .controller('HomeCtrl', ['$scope', function ($scope) {
+  .controller('HomeCtrl', function ($scope) {
+
+    $scope.userState = [
+        {'state': 'AL'},
+        {'state': 'AK'},
+        {'state': 'AR'},
+        {'state': 'CT'},
+        {'state': 'WA'},
+        {'state': 'OR'}
+    ];
 
     $scope.location = {
+      'locationA': 'Seattle, 4th & Pike',
+      'locationB': 'Seattle, 5th & Pine'
+    };
+
+
+    $scope.custom = true;
+    $scope.toggleCustom = function() {
+        $scope.custom = $scope.custom === false ? true: false;
+    };
+
+    $scope.locationData = {
       'name': 'Location Name',
       'address': 'Address',
       'addressTwo': 'Address 2',
@@ -21,29 +41,27 @@ angular.module('hhChallengeApp')
       'phone': 'Phone'
     };
 
-    $scope.change = function(){
-      angular.element('#button-save').addClass("button-saved");
+
+    //delete new values from all inputs
+    // var initial = {text: 'initial value'};
+    //     $scope.loc = angular.copy(initial);
+        $scope.clearData = function() {
+            $scope.loc = angular.copy();
+            $scope.form.$setPristine();
+
+            // console.log(initial);
+        };
+
+    //change class on save changes button
+    $scope.click = function(){
+      $scope.active = true;
     };
 
-  $scope.$watch('loc', function(newValue, oldValue) {
-
-    $scope.clearData = function() {
-
-      if(newValue !==  oldValue) {
-        $scope.loc = oldValue;
-        console.log(oldValue);
-      }
-    };
-
-  });
-}]);
+});
 
 /* TODOS
-1. re-write var elem using angular and scope
-2. re-write scope.location to revert to previous state and not empty string
-3. work on titles for inputs so that they're hidden until user clicks on input box
-4. create state dropdown for forms
-5. create dropdown for locations in header
-6. add symbols for main nav
-7. change styling of forms, colors of text and sizing. Also work on responsiveness!
+4. create dropdown for locations in header
+
+STRETCH
+8. use ng-repeat for navigation
 */
