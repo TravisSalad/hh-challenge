@@ -52,11 +52,6 @@ angular.module('hhChallengeApp')
             // console.log(initial);
         };
 
-    //change class on save changes button
-    $scope.click = function(){
-      $scope.active = true;
-    };
-
 });
 
 /* TODOS
