@@ -9,16 +9,22 @@
           <div class="header-sub">
             <a>Happy Dance & Music</a>
             <span class="break">|</span>
-            <span ng-click="toggleCustom()" style="position: absolute;">
-              <a href="" ng-show="custom">{{location.locationA}}</a>
-              <span class="glyphicon glyphicon-chevron-down"></span>
-              <br>
-              <a href="" ng-hide="custom">{{location.locationB}}</a>
+
+            <span>
+                <select class="turnintodropdown">
+                    <option>{{location.locationA}}</option>
+                    <option>{{location.locationB}}</option>
+                </select>
             </span>
+
+            <span class="glyphicon glyphicon-chevron-down"></span>
+
           </div>
         </div>
       </div>
     </div>
+
+
 
     <div class="main-nav col-sm-2">
       <ul class="nav navbar-nav">
